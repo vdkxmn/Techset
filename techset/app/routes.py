@@ -12,3 +12,4 @@ def index():
         {'title': '32GB (2x16GB) Corsair Vengeance DDR5 6000MHz CL32', 'price': '£69.95'},
         ]
     return render_template('index.html', title='Home', listings=listings, user=user)
+#this is a comment
