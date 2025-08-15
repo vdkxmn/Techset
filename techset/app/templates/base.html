@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Techset</title>
+        {% else %}
+        <title>Greetings, Techsetian.</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Techset: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

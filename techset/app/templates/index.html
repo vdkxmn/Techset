@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Greetings, {{ user.username }}</h1>
+    {% for listing in listings %}
+    <div><p>{{ listing.title }} -</p><b>{{ listing.price }}</b></div>
+    {% endfor %}
+{% endblock %}
